@@ -1,6 +1,50 @@
+/* Para introducir una fuente diferente añadimos font-face con la dirección en nuestra carpeta y luego introducimos en body las fuentes a utilizar en la web */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
+}
+
+/* Para eliminar los bordes por defecto en la web quitamos de body y img el margin y el padding: */
+
+body, img{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .title,
 .header,
 .bottom {
     background-color: #1F2937;
     color: #F9FAF8;
+}
+ 
+.title {
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+    align-items: center;
+}
+
+h3 {
+font-size: 24px;
+}
+
+/* Para quitar los puntos de las listas utilizamos list-style: none; */
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Para eliminar el subrayado y cambiar el color de los links utilizamos lo siguiente: */
+a:link, a:visited,  a:hover, a:active
+{
+    color: #F9FAF8;
+    text-decoration: none;
 }
