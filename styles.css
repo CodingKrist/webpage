@@ -1,9 +1,6 @@
 /* Para introducir una fuente diferente añadimos font-face con la dirección en nuestra carpeta y luego introducimos en body las fuentes a utilizar en la web */
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto/Roboto-Regular.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 /* Para eliminar los bordes por defecto en la web quitamos de body y img el margin y el padding: */
 
@@ -24,19 +21,32 @@ body {
 }
  
 .title {
+    padding: 0px 100px 120px 100px;
+    margin: 0;
+    border: 0;
     display:flex;
     justify-content: space-between;
-    padding: 0px 100px 0px 100px;
     align-items: center;
 }
 
-h3 {
-font-size: 24px;
+h3, h2, h1 {
+/* para que no haga saltos de página ponemos display: inline; */
+display: inline;
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #F9FAF8;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
 /* Para quitar los puntos de las listas utilizamos list-style: none; */
 
-ul {
+ul, li {
     display: flex;
     list-style: none;
     gap: 20px;
@@ -48,3 +58,32 @@ a:link, a:visited,  a:hover, a:active
     color: #F9FAF8;
     text-decoration: none;
 }
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 100px 120px 100px;
+    margin: 0;
+    border: 0;
+}
+
+.signup {
+    padding: 0px 100px 0px 100px;
+    margin: 0;
+    border: 0;
+}
+
+.my-button {
+    padding: 10px 20px;
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .my-button:hover {
+    background-color: #58acf0;
+  }
+  .my-button:active {
+    background-color: #3882F6;
+  }

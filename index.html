@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>¡La Despeinada!</title>
   <link rel="stylesheet" href="./styles.css" />
+  <!-- para poner una imagen en el título de la pestaña añadimos lo siguiente: -->
   <link rel="icon" type="image/png" href="./images/iconvega.png">
 </head>
 <body>
   <!-- trying the comment line, shortcut: Ctrl + / -->
   <div class="title">
-    <h3><img width="25" height="25" src="./images/iconvega.png"> La Despeinada</h3>
+    <a href="./index.html"><h3><img width="25" height="25" src="./images/iconvega.png"> La Despeinada</h3></a>
     <ul>
       <li><a href="./linkone">header link one</a></li>
       <li><a href="./linktwo">header link two</a></li>
@@ -18,11 +19,14 @@
     </ul>
   </div> 
   <div class="header">
-    <h1>This website is Awesome</h1>
-    <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-    <button>Sign up</button>
-    
-    <img src="./images/title" alt="Image description">
+    <div class="onehead">
+      <h1>This website is Awesome</h1>
+      <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+      <button class="my-button">Sign up</button>
+    </div>  
+    <div class="twohead">  
+      <img width="500" height="350" src="./images/vegaprincipal.jpeg" alt="Vega despeinada">
+    </div>  
   </div>
   <div class="images">
     <h2>Some random information.</h2>
@@ -43,7 +47,7 @@
     <p>-Thor, God of Thunder</p>
   </div>
 
-  <div class="Signup">
+  <div class="signup">
     <p>Call to action! It's time!</p>
     <p>Sign up for our product by clicking that button right over there!</p>
     <button>Sign up</button>
