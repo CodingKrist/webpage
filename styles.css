@@ -42,8 +42,15 @@ h3 {
 
 h1 {
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 900;  
 }
+
+h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
 /* Para quitar los puntos de las listas utilizamos list-style: none; */
 
 ul, li {
@@ -65,6 +72,7 @@ a:link, a:visited,  a:hover, a:active
     padding: 0px 100px 120px 100px;
     margin: 0;
     border: 0;
+    gap: 60px;
 }
 
 .signup {
@@ -87,3 +95,39 @@ a:link, a:visited,  a:hover, a:active
   .my-button:active {
     background-color: #3882F6;
   }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+  }
+
+  .squares {
+    display:flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    text-align: center;
+  }
+
+  img {
+    border-color:#3882F6;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+
+  }
+
+  .text {
+    font-size: 18px;
+    color: #404349;
+  }
+
+  .logo {
+    border: none;
+  }
+
